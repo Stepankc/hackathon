@@ -1,11 +1,12 @@
 import React from 'react'
 import { Routes, Route, Link } from "react-router-dom"
+import Loginpage from './loginpage'
 
 const header = () => {
     return (
         <div>
             <nav>
-                <ul>
+                <ul className='header'>
                     <li>
                         <Link to="getStart">Начало работы</Link>
                     </li>
@@ -18,11 +19,11 @@ const header = () => {
                 </ul>
             </nav>
             <div className="main">
-                {/* Define all the routes */}
                 <Routes>
+                    <Route path="login" element={<Loginpage />}></Route>
                     <Route path="getStart" element={<GetStart />}></Route>
                     <Route path="statistics" element={<Statistics />}></Route>
-                    <Route path="workSpace" element={<workSpace />}></Route>
+                    <Route path="workSpace" element={<WorkSpace />}></Route>
                 </Routes>
             </div>
         </div>
@@ -31,14 +32,14 @@ const header = () => {
     
 }
 
-export const GetStart = () => {
-    return <div>You are in Home page</div>
+    export const GetStart = () => {
+    return <div>222</div>
   }
   export const Statistics = () => {
-    return <div>This is the page where you put details about yourself</div>
+    return <div>123</div>
   }
-  export const workSpace = () => {
-    return <div>This is a 404 page</div>
+  export const WorkSpace = () => {
+    return <div>qweqwe</div>
   }
 
 export default header
