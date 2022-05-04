@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route, Link } from "react-router-dom"
+import Loginpage from './loginpage'
 
 const header = () => {
     return (
@@ -20,6 +21,7 @@ const header = () => {
             <div className="main">
                 {/* Define all the routes */}
                 <Routes>
+                    <Route path="login" element={<Loginpage />}></Route>
                     <Route path="getStart" element={<GetStart />}></Route>
                     <Route path="statistics" element={<Statistics />}></Route>
                     <Route path="workSpace" element={<workSpace />}></Route>
