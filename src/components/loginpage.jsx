@@ -11,6 +11,7 @@ const Loginpage = () => {
                 <input type="password" className="LoginInput" />
                 <button className="LoginButton"></button>
             </div>
+         </div>
     );
 };
 

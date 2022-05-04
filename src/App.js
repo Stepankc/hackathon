@@ -4,12 +4,13 @@ import './components/LoginPage.css';
 import Loginpage from "./components/loginpage";
 import "./style/app.sass"
 
+
 function App() {
   return (
     <div className="App">
       <Header/>
+      <Loginpage/>
     </div>
   )
 }
-
 export default App;

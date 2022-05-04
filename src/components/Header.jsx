@@ -5,19 +5,13 @@ import Loginpage from './loginpage'
 const header = () => {
     return (
         <div>
-            <nav>
-                <ul className='header'>
-                    <li>
-                        <Link to="getStart">Начало работы</Link>
-                    </li>
-                    <li>
-                        <Link to="statistics">Статистика</Link>
-                    </li>
-                    <li>
-                        <Link to="workSpace">Рабочее пространство</Link>
-                    </li>
-                </ul>
+            <div className='header'>
+            <nav className='navigation'>
+                <Link className='active' to="getStart">Начало работы<hr className='activeLine'></hr></Link>
+                <Link className='active' to="statistics">Статистика</Link>
+                <Link className='active' to="workSpace">Рабочее пространство</Link>
             </nav>
+            </div>
             <div className="main">
                 <Routes>
                     <Route path="login" element={<Loginpage />}></Route>
@@ -27,19 +21,19 @@ const header = () => {
                 </Routes>
             </div>
         </div>
-        
+
     )
-    
+
 }
 
-    export const GetStart = () => {
+export const GetStart = () => {
     return <div>222</div>
-  }
-  export const Statistics = () => {
+}
+export const Statistics = () => {
     return <div>123</div>
-  }
-  export const WorkSpace = () => {
+}
+export const WorkSpace = () => {
     return <div>qweqwe</div>
-  }
+}
 
 export default header
