@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.LoginPage {
+    background: #F0F9FF;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginBlock {
+    width: 25vw;
+    height: 50vh;
+    background: #FFFFFF;
+    border: 2.5px solid #0C4A6E;
+    border-radius: 10%;
+    margin: 50% 0;
+}
+
+.LoginTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.LoginText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.LoginInput {
+    width: 80%;
+    height: 10%;
+    background: #FFFFFF;
+    border: 2.5px solid #0C4A6E;
+    border-radius: 1px;
+}
