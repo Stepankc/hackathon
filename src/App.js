@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import "./components/LoginPage.css";
+import "./components/LoginPage.sass";
 import Loginpage from "./components/loginpage";
 import "./style/app.sass";
 
