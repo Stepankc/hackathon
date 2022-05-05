@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route, Link } from "react-router-dom"
-import Loginpage from './LoginPage'
-import WorkSpace from './WorkSpace'
-import GetStart from './GetStart'
+import Loginpage from '../pages/LoginPage'
+import WorkSpace from '../pages/WorkSpace'
+import GetStart from '../pages/GetStart'
 
 const header = () => {
     return (
