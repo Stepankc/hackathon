@@ -1,6 +1,7 @@
 import React from "react";
 import Ticket from "./Ticket";
 
+
 const WorkSpace = () => {
   return (
     <div>
@@ -20,4 +21,4 @@ const WorkSpace = () => {
   );
 };
 
-export default WorkSpace;
+export default WorkSpace
