@@ -9,7 +9,9 @@ const WorkSpace = () => {
                 <div className='titleComponent'>Статус</div>
             </div>
             <Ticket />
-            {/* <embed src="https://africau.edu/images/default/sample.pdf" width="800px" height="1000px" /> */}
+            <Ticket />
+            <Ticket />
+            <Ticket />
         </div>
     )
 }
