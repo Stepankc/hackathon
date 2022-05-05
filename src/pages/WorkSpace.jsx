@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Ticket from '../components/Ticket'
 import axios from 'axios'
+import { Pagination } from '@mui/material'
 
 
 const WorkSpace = () => {
@@ -22,6 +23,15 @@ const WorkSpace = () => {
             {post.map(
                 com => <Ticket post={com} />
             )}
+            <div className="paginatonStyle">
+                <Pagination
+                    count={post.length / 10}
+                // page={page}
+                // onPageChange={handleChangePage}
+                // rowsPerPage={rowsPerPage}
+                // onRowsPerPageChange={handleChangeRowsPerPage}
+                />
+            </div>
         </div>
     )
 }

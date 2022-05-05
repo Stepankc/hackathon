@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import Loginpage from '../pages/LoginPage'
 import WorkSpace from '../pages/WorkSpace'
 import GetStart from '../pages/GetStart'
+import DocumentPage from '../pages/DocumentPage'
 
 const header = () => {
     return (
@@ -18,6 +19,7 @@ const header = () => {
                     <Route path="/" element={<Loginpage />}></Route>
                     <Route path="getStart" element={<GetStart />}></Route>
                     <Route path="workSpace" element={<WorkSpace />}></Route>
+                    <Route path="document" element={<DocumentPage />}></Route>
                 </Routes>
             </div>
         </div>
