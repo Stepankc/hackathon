@@ -1,16 +1,15 @@
 import React from "react";
 import Header from "./components/Header";
-import './components/LoginPage.css';
+import "./components/LoginPage.css";
 import Loginpage from "./components/loginpage";
-import "./style/app.sass"
-
+import "./style/app.sass";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Loginpage/>
+      {window.location.pathname !== "/" ? <Header /> : null}
+      {window.location.pathname === "/" ? <Loginpage /> : null}
     </div>
-  )
+  );
 }
 export default App;
