@@ -13,7 +13,7 @@ const Loginpage = () => {
           <h2 className="LoginText">Пароль:</h2>
           <input type="password" className="LoginInput" />
         </div>
-        <button className="LoginButton">sing in</button>
+        <button className="LoginButton">Log in</button>
       </div>
     </div>
   );
