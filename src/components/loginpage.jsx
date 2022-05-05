@@ -4,14 +4,18 @@ const Loginpage = () => {
     return (
         <div className="LoginPage">
             <div className="LoginBlock">
-                <h1 className="LoginTitle"></h1>
-                <h2 className="LoginText"></h2>
-                <input type="text" className="LoginInput" />
-                <h2 className="LoginText"></h2>
+                <h1 className="LoginTitle">Вход</h1>
+                <div className='component'>
+                    <h2 className="LoginText">Логин:</h2>
+                    <input type="text" className="LoginInput" />
+                </div>
+                <div className='component'>
+                <h2 className="LoginText">Пароль:</h2>
                 <input type="password" className="LoginInput" />
-                <button className="LoginButton"></button>
+                </div>
+                <button className="LoginButton">sing in</button>
             </div>
-         </div>
+        </div>
     );
 };
 
