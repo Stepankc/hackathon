@@ -1,7 +1,8 @@
 import React from 'react'
 import { Routes, Route, Link } from "react-router-dom"
-import Loginpage from './loginpage'
+import Loginpage from './LoginPage'
 import WorkSpace from './WorkSpace'
+import GetStart from './GetStart'
 
 const header = () => {
     return (
@@ -22,12 +23,6 @@ const header = () => {
         </div>
     )
 
-}
-
-export const GetStart = () => {
-    return <div>
-        <embed src="https://africau.edu/images/default/sample.pdf" width="1000px" height="900px" />
-    </div>
 }
 
 export default header
