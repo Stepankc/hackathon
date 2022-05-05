@@ -26,7 +26,7 @@ const header = () => {
 
 export const GetStart = () => {
     return <div>
-        123
+        <embed src="https://africau.edu/images/default/sample.pdf" width="1000px" height="900px" />
     </div>
 }
 
