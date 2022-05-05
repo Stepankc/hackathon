@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./components/Header";
-import Loginpage from "./components/loginpage";
+import Loginpage from "./components/LoginPage";
 import "./style/LoginPage.sass";
 import "./style/header.sass";
 import "./style/workSpace.sass";
 import "./style/ticket.sass"
+import "./style/getStart.sass"
 
 function App() {
   return (
