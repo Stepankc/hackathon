@@ -4,7 +4,7 @@ import Loginpage from "./components/loginpage";
 import "./style/LoginPage.sass";
 import "./style/header.sass";
 import "./style/workSpace.sass";
-import "./style/title.sass"
+import "./style/ticket.sass"
 
 function App() {
   return (
