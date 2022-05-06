@@ -4,7 +4,14 @@ const GetStart = () => {
     return (
         <div>
             <Header />
-            11122222222222222222222222222222222222222222222222222
+            <div className='instruction'>
+                <h1 className='dataBase'>База данных:</h1>
+                <p>какой-то текст</p>
+                <h1 className='Back-end'>Описание back-end решения:</h1>
+                <p>text мб список везде по пунктам</p>
+                <h1 className='Back-end'>Описание front-end решения:</h1>
+                <p>text</p>
+            </div>
         </div>
     )
 }
