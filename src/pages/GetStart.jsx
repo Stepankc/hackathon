@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Header from '../components/Header.jsx'
 const GetStart = () => {
     return (
         <div>
-            111
+            <Header />
+            11122222222222222222222222222222222222222222222222222
         </div>
     )
 }

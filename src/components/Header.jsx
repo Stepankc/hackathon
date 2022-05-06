@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-const header = () => {
+const Header = () => {
     return (
         <div>
             <div className='header'>
@@ -15,4 +15,4 @@ const header = () => {
 
 }
 
-export default header
+export default Header

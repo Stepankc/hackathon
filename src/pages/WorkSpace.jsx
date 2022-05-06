@@ -32,12 +32,12 @@ const WorkSpace = () => {
         const selectedPage = event.selected;
         setOffset(selectedPage * postsPerPage + 1)
       };
-
     useEffect(() => {
         getAllPosts()
       }, [offset])
     return (
         <div>
+            <Header />
             <div className='title'>
                 <div className='titleComponent'>Имя заявки</div>
                 <div className='titleComponent'>Статус</div>

@@ -1,6 +1,10 @@
-import React from 'react'
-import Header from "./components/Header";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from "react-router-dom";
+
 
 import WorkSpace from "./pages/WorkSpace";
 import GetStart from "./pages/GetStart";
@@ -16,7 +20,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {window.location.pathname !== "/" ? <Header /> : <Loginpage />}
         <Switch>
           <Route path="/" component={Loginpage} exact />
           <Route path="/getstart" component={GetStart} exact />
