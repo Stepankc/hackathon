@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Ticket from '../components/Ticket'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
+import Header from '../components/Header.jsx';
 
 
 const WorkSpace = () => {
