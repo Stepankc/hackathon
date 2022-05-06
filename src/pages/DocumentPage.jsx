@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
+import Doc from '../components/Doc';
+import axios from 'axios';
 
 const DocumentPage = () => {
+
+    const [props, setProps] = useState([])
+
+    useEffect(() => {     
+        const getData = async () => {  
+          await axios.get(`http://10.3.4.14:8080/documents/${1}`)  
+          .then(res => {  
+            setProps(res.data)
+          }) 
+        }  
+        getData()  
+      }, [])
     return (
         <div>
             <Header />
-            <div className='refactorDoc'>
-                <div className="info">12313</div>
-                <div className='document'>
-                    <embed src="https://africau.edu/images/default/sample.pdf" />
-                </div>
-            </div>
+            {<Doc el = {props}/>}
         </div>
-    );
+    )
 };
 
 export default DocumentPage;

@@ -3,7 +3,7 @@ import Ticket from '../components/Ticket'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
 import Header from '../components/Header.jsx';
-import { Pagination } from '@mui/material';
+
 
 
 const WorkSpace = () => {
@@ -21,7 +21,7 @@ const WorkSpace = () => {
     }
 
     const getAllPosts = async () => {
-        const res = await axios.get(`https://jsonplaceholder.typicode.com/posts`)
+        const res = await axios.get(`http://10.3.4.14:8080/documents`)
         const data = res.data;
         const slice = data.slice(offset - 1 , offset - 1 + postsPerPage)
         const postData = getPostData(slice)

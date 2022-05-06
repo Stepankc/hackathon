@@ -7,8 +7,8 @@ const Ticket = (props) => {
         <div>
             <Link className="TicketLink" to="/document">
                 <div className='ticket'>
-                    <div className='ticketName'>{props.post.id}</div>
-                    <div className='ticketStatus done'>DONE</div>
+                    <div className='ticketName'>{props.post.name}</div>
+                    <div className='ticketStatus done'>{props.post.status}</div>
                 </div>
             </Link>
             <hr className='underline' />
