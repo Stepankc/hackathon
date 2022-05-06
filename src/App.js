@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Header";
 import {
   BrowserRouter as Router,
   Route,
@@ -21,7 +20,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {window.location.pathname !== "/" ? <Header /> : <Loginpage />}
         <Switch>
           <Route path="/" component={Loginpage} exact />
           <Route path="/getstart" component={GetStart} exact />
