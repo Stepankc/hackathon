@@ -3,6 +3,7 @@ import Ticket from '../components/Ticket'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
 import Header from '../components/Header.jsx';
+import { Pagination } from '@mui/material';
 
 
 const WorkSpace = () => {
@@ -45,10 +46,8 @@ const WorkSpace = () => {
             </div>
             {posts}
                   <ReactPaginate
-        previousLabel={"previous"}
-        nextLabel={"next"}
-        breakLabel={"..."}
-        breakClassName={"break-me"}
+        previousLabel={""}
+        nextLabel={""}
         pageCount={pageCount}
         onPageChange={handlePageClick}
         containerClassName={"pagination"}

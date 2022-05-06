@@ -6,8 +6,8 @@ const Header = () => {
         <div>
             <div className='header'>
                 <nav className='navigation'>
-                    <Link className='active' to="getStart">Начало работы</Link>
-                    <Link className='active' to="workSpace">Рабочее пространство</Link>
+                    <Link className='activeHeader' to="getStart">Начало работы</Link>
+                    <Link className='activeHeader' to="workSpace">Рабочее пространство</Link>
                 </nav>
             </div>
         </div>
