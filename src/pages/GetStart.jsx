@@ -4,7 +4,7 @@ const GetStart = () => {
     return (
         <div>
             <Header />
-            11122222222222222222222222222222222222222222222222222
+            <div className="GetStarted">12556425</div>
         </div>
     )
 }
