@@ -5,16 +5,16 @@ import {
   Switch
 } from "react-router-dom";
 
-import WorkSpace from './pages/WorkSpace';
-import GetStart from './pages/GetStart';
-import DocumentPage from './pages/DocumentPage';
-import Loginpage from './pages/LoginPage';
+
+import WorkSpace from "./pages/WorkSpace";
+import GetStart from "./pages/GetStart";
+import DocumentPage from "./pages/DocumentPage";
+import Loginpage from "./pages/LoginPage";
 import "./style/LoginPage.sass";
 import "./style/header.sass";
 import "./style/workSpace.sass";
 import "./style/ticket.sass";
 import "./style/getStart.sass";
-
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path="/document" component={DocumentPage} exact />
         </Switch>
       </Router>
+
     </div>
   );
 }
