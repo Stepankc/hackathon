@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-const ticket = (props) => {
+const Ticket = (props) => {
+
 
     return (
         <div>
-            <Link to="/document">
-            <div className='ticket'>
-                <div className='ticketName'>{props.post.id}</div>
-                <div className='ticketStatus done'>DONE</div>
-            </div>
-            <hr className='underline' />
+            <Link className="TicketLink" to="/document">
+                <div className='ticket'>
+                    <div className='ticketName'>{props.post.id}</div>
+                    <div className='ticketStatus done'>DONE</div>
+                </div>
             </Link>
+            <hr className='underline' />
         </div>
     )
 }
 
-export default ticket
+export default Ticket

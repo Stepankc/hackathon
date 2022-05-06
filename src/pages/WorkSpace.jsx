@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import Ticket from '../components/Ticket'
 import axios from 'axios'
 import { Pagination } from '@mui/material'
+import Header from '../components/Header';
 
 
 const WorkSpace = () => {
-
+ 
     const [post, setPosts] = useState([])
     useEffect(() => {
         axios({
@@ -16,6 +17,7 @@ const WorkSpace = () => {
     console.log(post)
     return (
         <div>
+            <Header />
             <div className='title'>
                 <div className='titleComponent'>Имя заявки</div>
                 <div className='titleComponent'>Статус</div>
