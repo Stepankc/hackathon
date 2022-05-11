@@ -5,7 +5,7 @@ const Ticket = (props) => {
 
     return (
         <div>
-            <Link className="TicketLink" to="/document">
+            <Link className="TicketLink" to={{pathname:"/document", propsSearch: props.post.id}}>
                 <div className='ticket'>
                     <div className='ticketName'>{props.post.name}</div>
                     <div className='ticketStatus done'>{props.post.status}</div>

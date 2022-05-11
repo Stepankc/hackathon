@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import axios from 'axios';
 
-const DocumentPage = () => {
+const DocumentPage = (params) => {
   const [props, setProps] = useState([])
 
     const getData = async () => {  
-      await axios.get(`http://10.3.5.105:8080/api/documents/${1}`)  
+      await axios.get(`http://10.3.5.105:8080/api/documents/${params.location.propsSearch}`)  
       .then(res => {  
         setProps(res.data)
       }) 
