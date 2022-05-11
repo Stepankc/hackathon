@@ -6,7 +6,7 @@ const DocumentPage = (params) => {
   const [props, setProps] = useState([])
 
     const getData = async () => {  
-      await axios.get(`http://10.3.5.105:8080/api/documents/${params.location.propsSearch}`)  
+      await axios.get(`http://10.3.5.105:8080/api/documents/${params.location.propsSearch}`)
       .then(res => {  
         setProps(res.data)
       }) 
