@@ -1,25 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import Doc from '../components/Doc';
 import axios from 'axios';
 
 const DocumentPage = () => {
+  const [props, setProps] = useState([])
 
-    const [props, setProps] = useState([])
-
+    const getData = async () => {  
+      await axios.get(`http://10.3.5.105:8080/api/documents/${1}`)  
+      .then(res => {  
+        setProps(res.data)
+      }) 
+    }  
     useEffect(() => {     
-        const getData = async () => {  
-          await axios.get(`http://10.3.4.14:8080/documents/${1}`)  
-          .then(res => {  
-            setProps(res.data)
-          }) 
-        }  
-        getData()  
-      }, [])
+      getData()  
+    }, [])
     return (
-        <div>
+      <div>
             <Header />
-            {<Doc el = {props}/>}
+            <div>
+            <div className='refactorDoc'>
+                <div className="info">
+                    <div className="initialValue">
+                        <div className="TopBlock">
+                        </div>
+                        <div className="BottomBlock">
+                            <div>
+                                <p className="CheckTitle">Проверено: </p>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checked" name="Checked" />
+                            </div>
+                        </div>
+                        <button className="saveButton">Сохранить</button>
+                    </div>
+                </div>
+                <div className='document'>
+                    <embed src={props.pdfUrl} />
+                </div>
+            </div>
+        </div>
         </div>
     )
 };
